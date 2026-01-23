@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://gimihome.me/</loc>   <!-- URL e faqes kryesore -->
+    <lastmod>2026-01-23</lastmod>    <!-- Data e fundit kur e përditësove faqen -->
+    <changefreq>weekly</changefreq>   <!-- Sa shpesh ndryshon faqja -->
+    <priority>1.0</priority>         <!-- Rëndësia kryesore -->
+  </url>
+
+</urlset>
