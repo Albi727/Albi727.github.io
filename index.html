@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Mobilie moderne për shtëpinë tuaj — kuzhina, tavolina, dhoma gjumi dhe komoda. Porosit me ofertë." />
+    <title>GimiHome | Mobilie që sjellin rehati dhe stil</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../mobile-fixes.css">
+</head>
+
+<body>
+    <!-- Anchor target for "Home" (top of page) -->
+    <div id="home" class="page-top" aria-hidden="true"></div>
+
+    <!-- =====================
+			 Top Bar
+	====================== -->
+    <div class="topbar">
+        <div class="container topbar__inner">
+            <div class="topbar__left">
+                <a class="topbar__link" href="tel:+38344572912">📞 +383 44 572 912</a>
+                <a class="topbar__link" href="tel:+38344516282">📞 +383 44 516 282</a>
+                <span class="topbar__dot">•</span>
+
+            </div>
+            <!-- topbar__right removed for cleaner mobile layout -->
+        </div>
+    </div>
+
+    <!-- =====================
+			 Header / Navigation
+	====================== -->
+    <header class="header">
+        <div class="container header__inner">
+            <a class="brand" href="#home" aria-label="GimiHome">
+                <span class="brand__mark">GH</span>
+                <span class="brand__text">
+                    <span class="brand__name">GimiHome</span>
+                    <span class="brand__tagline">Mobilie me stil, që japin shpirt çdo shtëpie</span>
+                </span>
+            </a>
+
+            <nav class="nav" aria-label="Navigimi kryesor">
+                <a class="nav__link" href="#home">Home</a>
+                <a class="nav__link" href="#produkte">Produkte</a>
+                <a class="nav__link" href="#galeri">Galeri</a>
+                <a class="nav__link" href="#rreth-nesh">Rreth Nesh</a>
+                <a class="nav__link nav__link--cta" href="#kontakt">Kontakt</a>
+            </nav>
+            <!-- Mobile hamburger (visible on small screens) -->
+            <button id="hamburger" class="hamburger" aria-label="Open menu" aria-controls="mobileMenu"
+                aria-expanded="false">
+                <span class="hamburger__box">
+                    <span class="hamburger__inner"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (hidden on desktop) -->
+    <nav id="mobileMenu" class="mobile-nav" aria-hidden="true">
+        <div class="mobile-nav__backdrop" id="mobileMenuBackdrop"></div>
+        <div class="mobile-nav__panel" role="dialog" aria-modal="true" aria-label="Menyja mobile">
+            <button class="mobile-nav__close" id="mobileMenuClose" aria-label="Mbyll meny">✕</button>
+            <div class="mobile-nav__links">
+                <a class="nav__link" href="#home">Home</a>
+                <a class="nav__link" href="#produkte">Produkte</a>
+                <a class="nav__link" href="#galeri">Galeri</a>
+                <a class="nav__link" href="#rreth-nesh">Rreth Nesh</a>
+                <a class="nav__link nav__link--cta" href="#kontakt">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =====================
+			 Hero Section
+	====================== -->
+    <section class="hero" aria-label="Hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <p class="hero__eyebrow">Mobilie moderne • Cilësi që ndjehet çdo ditë</p>
+                <h1 class="hero__title">Krijo shtëpinë e ëndrrave të tua — me rehati, stil dhe ngrohtësi</h1>
+                <p class="hero__subtitle">
+                    Nga kuzhina te dhoma e gjumit, ne sjellim mobilie që e bëjnë shtëpinë të ndihet si vendi ku do të
+                    kthehesh gjithmonë.
+                    Zgjidh dizajnin, ne kujdesemi për detajet.
+                </p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="#produkte">Shiko produktet</a>
+                    <a class="btn btn--ghost" href="#kontakt">Kontakto për ofertën</a>
+                </div>
+
+                <div class="hero__trust">
+                    <div class="trust">
+                        <div class="trust__item">
+                            <span class="trust__value">+500</span>
+                            <span class="trust__label">klientë të kënaqur</span>
+                        </div>
+                        <div class="trust__item">
+                            <span class="trust__value">Porosi</span>
+                            <span class="trust__label">sipas hapësirës tënde</span>
+                        </div>
+                        <div class="trust__item">
+                            <span class="trust__value">Garanci</span>
+                            <span class="trust__label">dhe montim profesional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__media" aria-label="Imazh produkti i përzgjedhur">
+                <!-- Hero image and the 'Oferta e javës' card removed as requested -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================
+			 Products Section
+	====================== -->
+    <section class="section" id="produkte" aria-label="Produkte">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="section__title">Produkte që të bëjnë ta duash shtëpinë edhe më shumë</h2>
+                <p class="section__subtitle">Zgjidh kategorinë dhe gjej stilin që i shkon jetës tënde — të ngrohtë,
+                    praktik dhe elegant.</p>
+            </div>
+
+            <!-- Category: Kitchens -->
+            <div class="category">
+                <div class="category__head">
+                    <h3 class="category__title">Kuzhina</h3>
+                    <p class="category__desc">Kuzhina: zemra e shtëpisë, ku shija takohet me kujtimet. Dizajn i mençur
+                        dhe jetëgjatësi në çdo detaj.</p>
+                </div>
+                <div class="grid grid--products">
+                    <article class="product-card">
+                        <div class="media media--square" role="img" aria-label="Kuzhinë Moderne - placeholder">
+                            <img class="media__img" src="images/981cf844-00e7-462a-afbb-f03b5be0dd7d.jpg"
+                                alt="Kuzhinë Moderne" data-group="kuzhina">
+                            <div class="media__label">IMAGE</div>
+                        </div>
+                        <h4 class="product-card__title">Kuzhinë Moderne</h4>
+                        <p class="product-card__text">Linje të pastra, ndriçim i ngrohtë dhe organizim që të lehtëson
+                            çdo gatim.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="media media--square" role="img" aria-label="Kuzhinë Klasike - placeholder">
+                            <img class="media__img" src="images/350ca008-807a-4e13-ab82-2c487b639c41.jpg"
+                                alt="Kuzhinë Klasike" data-group="kuzhina">
+                            <div class="media__label">IMAGE</div>
+                        </div>
+                        <h4 class="product-card__title">Kuzhinë Klasike</h4>
+                        <p class="product-card__text">Elegancë që s’plaket kurrë—detaje të kujdesshme për një atmosferë
+                            shtëpie.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="media media--square" role="img" aria-label="Kuzhinë Kompakte - placeholder">
+                            <img class="media__img" src="images/d47fb4a2-eab5-44f9-9773-f8598d3d4385.jpg"
+                                alt="Kuzhinë Kompakte" data-group="kuzhina">
+                            <div class="media__label">IMAGE</div>
+                        </div>
+                        <h4 class="product-card__title">Kuzhinë Kompakte</h4>
+                        <p class="product-card__text">Ideale për apartamente: çdo dollap, çdo raft, në vendin e duhur.
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Category: Tables -->
+            <div class="category">
+                <div class="category__head">
+                    <h3 class="category__title">Garderobë</h3>
+                    <p class="category__desc">Zbuloni koleksionin tonë të garderobave praktike dhe elegante, të
+                        dizajnuara për të organizuar dhe ruajtur rrobat tuaja me stil. Çdo model ofron kombinimin
+                        perfekt të funksionalitetit dhe estetikës, duke u përshtatur në çdo dhomë gjumi.</p>
+                </div>
+                <div class="grid grid--products">
+                    <article class="product-card">
+                        <div class="media media--square" role="img" aria-label="Tavolinë Ngrënie - placeholder">
+                            <img class="media__img" src="images/att.Y6K5lzDGDg3TE5lNWCNiquD8-CxSnCtnLlZL2uAQKyM.jpeg"
+                                alt="Tavolinë Ngrënie" data-group="garderobe">
+                            <div class="media__label">IMAGE</div>
+                        </div>
+                        <h4 class="product-card__title">Garderobë elegante</h4>
+                        <p class="product-card__text">Garderoba elegante dhe praktike për çdo dhomë gjumi.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="media media--square" role="img" aria-label="Tavolinë Kafeje - placeholder">
+                            <img class="media__img" src="images/att.ixQvKTEHIAHy-PmNX-TXEKhx6MKXO11oZXRGss3oUPU.jpeg"
+                                alt="Tavolinë Kafeje" data-group="garderobe">
+                            <div class="media__label">IMAGE</div>
+                        </div>
+                        <h4 class="product-card__title">Garderobë praktike</h4>
+                        <p class="product-card__text">Organizim i stiluar dhe hapësirë optimale për rrobat tuaja.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="media media--square" role="img" aria-label="Tavolinë Pune - placeholder">
+                            <img class="media__img" src="images/att.y1mRqfhKiyMGxjNA9UHjq_xXRnYj8TbG4XvFFh1p9jc.jpeg"
+                                alt="Tavolinë Pune" data-group="garderobe">
+                            <div class="media__label">IMAGE</div>
+                        </div>
+                        <h4 class="product-card__title">Garderobë moderne</h4>
+                        <p class="product-card__text">Dizajn modern që kombinon funksionalitet dhe estetikë.
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Category: Bedrooms -->
+            <div class="category">
+                <div class="category__head">
+                    <h3 class="category__title">Dhoma gjumi</h3>
+                    <p class="category__desc">Vendi ku pushon mendja. Ne krijojmë dhoma gjumi që të përqafojnë me qetësi
+                        dhe komoditet.</p>
+                </div>
+                <div class="grid grid--products">
+                    <article class="product-card">
+                        <div class="media media--square" role="img" aria-label="Krevat + Komodina - placeholder">
+                            <img class="media__img" src="images/att.nXgnKTHzmITXcDnmAQZzgh9zT4o95kJzXJ7jWKtmTFA.jpeg"
+                                alt="Krevat + Komodina" data-group="dhoma">
+                            <div class="media__label">IMAGE</div>
+                        </div>
+                        <h4 class="product-card__title">Krevat + Komodina</h4>
+                        <p class="product-card__text">Dizajn i ngrohtë dhe funksional—për një gjumë të qetë çdo natë.
+                        </p>
+                    </article>
+                    <article class="product-card">
+                        <div class="media media--square" role="img" aria-label="Garderobë - placeholder">
+                            <img class="media__img" src="images/att.ZCKRimxl4jBhaZrj7zvbaLayeMRK5ucHl2qZGmGJAUM.jpeg"
+                                alt="Garderobë" data-group="dhoma">
+                            <div class="media__label">IMAGE</div>
+                        </div>
+                        <h4 class="product-card__title">Garderobë</h4>
+                        <p class="product-card__text">Rregull që të çliron: ndarje të zgjuara dhe hapësirë e bollshme
+                            për gjithçka.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="media media--square" role="img" aria-label="Set Dhome Gjumi - placeholder">
+                            <img class="media__img" src="images/att.eCENWGWlGkhaDZLaq-Idk5eZyOz2Nx5pXq7DenPP7Nc.jpeg"
+                                alt="Set Dhoma Gjumi" data-group="dhoma">
+                            <div class="media__label">IMAGE</div>
+                        </div>
+                        <h4 class="product-card__title">Set Dhoma Gjumi</h4>
+                        <p class="product-card__text">Harmoni në çdo detaj—kombinime ngjyrash që sjellin qetësi dhe
+                            stil.</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Category: Dressers -->
+            <div class="category">
+                <div class="category__head">
+                    <h3 class="category__title">Komoda</h3>
+                    <p class="category__desc">Detaji që e bën hapësirën të duket e plotë. Praktike, elegante dhe gati
+                        për çdo cep të shtëpisë.</p>
+                </div>
+                <div class="grid grid--products">
+                    <article class="product-card">
+                        <div class="media media--square" role="img" aria-label="Komodë Minimaliste - placeholder">
+                            <img class="media__img" src="images/att.fSlaQQlH1aDyX9A9h_DNlVPDbTf_cS5qBVxDdrin8UE.jpeg"
+                                alt="Komodë Minimaliste" data-group="komoda">
+                            <div class="media__label">IMAGE</div>
+                        </div>
+                        <h4 class="product-card__title">Komodë Minimaliste</h4>
+                        <p class="product-card__text">E thjeshtë, por me klas—një zgjidhje e pastër për organizim të
+                            përditshëm.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="media media--square" role="img" aria-label="Komodë TV - placeholder">
+                            <img class="media__img" src="images/att.7vEnMl1GjQQXUcROeq-FKF0XQH4S5EewPbY0b4UzA8k.jpeg"
+                                alt="Komodë TV" data-group="komoda">
+                            <div class="media__label">IMAGE</div>
+                        </div>
+                        <h4 class="product-card__title">Komodë TV</h4>
+                        <p class="product-card__text">Stabilitet dhe stil në sallon—për një ambient të rregullt dhe
+                            modern.</p>
+                    </article>
+                    <article class="product-card">
+                        <div class="media media--square" role="img" aria-label="Komodë Klasike - placeholder">
+                            <img class="media__img"
+                                src="images/att.xUSgi5dserreKtmlyuajLw6YKXLGtV4CUXfCyoVBLpo (1).jpeg"
+                                alt="Komodë Klasike" data-group="komoda">
+                            <div class="media__label">IMAGE</div>
+                        </div>
+                        <h4 class="product-card__title">Komodë Klasike</h4>
+                        <p class="product-card__text">Prekje tradicionale me përfundime të ngrohta—për shtëpi me
+                            karakter.</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- CTA strip -->
+            <div class="cta-strip" aria-label="Thirrje për veprim">
+                <div class="cta-strip__content">
+                    <h3 class="cta-strip__title">Ke një ide? Ne e kthejmë në mobilie.</h3>
+                    <p class="cta-strip__text">Dërgo përmasat dhe stilin që preferon — do të marrësh një ofertë të qartë
+                        dhe të shpejtë.</p>
+                </div>
+                <a class="btn btn--primary" href="#kontakt">Kontakto për ofertën</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================
+			 Gallery Section
+	====================== -->
+    <section class="section section--alt" id="galeri" aria-label="Galeri">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="section__title">Galeri</h2>
+                <p class="section__subtitle">Shfleto disa nga punimet tona — ide që frymëzojnë, detaje që bindin.</p>
+            </div>
+
+            <div class="grid grid--gallery" aria-label="Galeria e imazheve">
+                <!-- Cleaned gallery: each image is inside a .media.media--gallery container with consistent data attributes -->
+                <div class="media media--gallery" role="img" aria-label="Galeria 1">
+                    <img class="media__img" src="images/IMG_2975.jpeg" alt="Galeria 1" data-index="0"
+                        data-group="gallery">
+                </div>
+                <div class="media media--gallery" role="img" aria-label="Galeria 2">
+                    <img class="media__img" src="images/IMG_2976.jpeg" alt="Galeria 2" data-index="1"
+                        data-group="gallery">
+                </div>
+                <div class="media media--gallery" role="img" aria-label="Galeria 3">
+                    <img class="media__img" src="images/IMG_2977.jpeg" alt="Galeria 3" data-index="2"
+                        data-group="gallery">
+                </div>
+                <div class="media media--gallery" role="img" aria-label="Galeria 4">
+                    <img class="media__img" src="images/IMG_2978.jpeg" alt="Galeria 4" data-index="3"
+                        data-group="gallery">
+                </div>
+                <div class="media media--gallery" role="img" aria-label="Galeria 5">
+                    <img class="media__img" src="images/att.xTqU7reUT8BXBecJXdNZPfycuKbAc4D1yzEqp1oJ2Tc.jpeg"
+                        alt="Galeria 5" data-index="4" data-group="gallery">
+                </div>
+                <div class="media media--gallery" role="img" aria-label="Galeria 6">
+                    <img class="media__img" src="images/att.wIXSdgbJZzdVnGKMj9ZLS1GgaOO0vXkP0-DbewkCFEc.jpeg"
+                        alt="Galeria 6" data-index="5" data-group="gallery">
+                </div>
+                <div class="media media--gallery" role="img" aria-label="Galeria 7">
+                    <img class="media__img" src="images/att.VpEOVjr0IbcTkfEqck478M_-F6UsyJmUedpoEd-JwEY.jpeg"
+                        alt="Galeria 7" data-index="6" data-group="gallery">
+                </div>
+                <div class="media media--gallery" role="img" aria-label="Galeria 8">
+                    <img class="media__img" src="images/att.FwB3G5tEHk9HsjIK70wEIu_tZvwySP7YWXgoSqcAYZg.jpeg"
+                        alt="Galeria 8" data-index="7" data-group="gallery">
+                </div>
+                <div class="media media--gallery" role="img" aria-label="Galeria 9">
+                    <img class="media__img" src="images/att.CBsFLlBDu-zz2cEab4X7HoG7lvn-baqwEhW54qqJGnQ.jpeg"
+                        alt="Galeria 9" data-index="8" data-group="gallery">
+                </div>
+                <div class="media media--gallery" role="img" aria-label="Galeria 10">
+                    <img class="media__img" src="images/att.aCaHQwySIagAPklAA-c-018mg0O3qBCDC8dMuWS-VsY.jpeg"
+                        alt="Galeria 10" data-index="9" data-group="gallery">
+                </div>
+                <div class="media media--gallery" role="img" aria-label="Galeria 11">
+                    <img class="media__img" src="images/att.9sN3owPp390HCCJGsAWVCYjEXNuR96usjkgWw0uYffs.jpeg"
+                        alt="Galeria 11" data-index="10" data-group="gallery">
+                </div>
+                <div class="media media--gallery" role="img" aria-label="Galeria 12">
+                    <img class="media__img" src="images/att.7vEnMl1GjQQXUcROeq-FKF0XQH4S5EewPbY0b4UzA8k (1).jpeg"
+                        alt="Galeria 12" data-index="11" data-group="gallery">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================
+			 About Us Section
+	====================== -->
+    <section class="section" id="rreth-nesh" aria-label="Rreth Nesh">
+        <div class="container">
+            <div class="about">
+                <div class="about__content">
+                    <h2 class="section__title">Rreth Nesh</h2>
+                    <p class="about__text">
+                        Te GimiHome besojmë se mobiliet nuk janë thjesht “objekte” — janë pjesë e përditshmërisë, të
+                        kujtimeve dhe të rehatisë suaj.
+                        Prandaj punojmë me kujdes në çdo detaj: matje të sakta, materiale cilësore dhe përfundime të
+                        pastra.
+                    </p>
+                    <p class="about__text">
+                        Qoftë kur zgjedh një kuzhinë për familjen, një ambient që mirëpret miqtë, apo një dhomë gjumi
+                        për
+                        qetësinë tënde,
+                        ne jemi këtu të të udhëheqim me sinqeritet dhe profesionalizëm.
+                    </p>
+
+                    <div class="about__highlights">
+                        <div class="highlight">
+                            <span class="highlight__title">Konsultim i thjeshtë</span>
+                            <span class="highlight__text">Të dëgjojmë, të këshillojmë, dhe propozojmë zgjidhjen më të
+                                mirë.</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight__title">Punim me porosi</span>
+                            <span class="highlight__text">Sipas hapësirës, shijes dhe buxhetit — pa stres, pa
+                                surpriza.</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight__title">Dorëzim & montim</span>
+                            <span class="highlight__text">E sjellim dhe e montojmë si duhet, që ti të shijosh
+                                rezultatin.</span>
+                        </div>
+                    </div>
+
+                    <a class="btn btn--primary" href="#kontakt">Kontakto për ofertën</a>
+
+                    <div class="about__note" aria-label="Shënim rreth vlerave">
+                        <p class="about__note-title">Besim që ndërtohet me punë</p>
+                        <p class="about__note-text">Transparencë, korrektësi dhe cilësi—siç do ta donim edhe ne për
+                            shtëpinë tonë.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- =====================
+         Lightbox Markup (hidden initially)
+    ====================== -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Mbyll">✕</button>
+        <div class="lightbox__wrap">
+            <img id="lightboxImg" class="lightbox__img" src="" alt="" />
+            <div class="lightbox__meta">
+                <div class="lightbox__nav">
+                    <button id="lightboxPrev" class="lightbox__btn" aria-label="Foto e mëparshme">⟨ Prev</button>
+                    <button id="lightboxNext" class="lightbox__btn" aria-label="Foto e ardhshme">Next ⟩</button>
+                </div>
+                <div class="lightbox__caption" id="lightboxCaption" style="color:var(--muted)"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================
+			 Contact Section
+	====================== -->
+    <section class="section section--alt" id="kontakt" aria-label="Kontakt">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="section__title">Kontakt</h2>
+                <p class="section__subtitle">Na kontakto dhe ta kthejmë idenë tënde në një ofertë të qartë. Jep disa
+                    detaje dhe ne të udhëzojmë hap pas hapi.</p>
+            </div>
+
+            <div class="contact">
+                <div class="contact__form contact__cta" aria-label="Kontakt i shpejtë">
+                    <h3 class="contact__cta-title">Le ta fillojmë me një bisedë</h3>
+                    <p class="contact__cta-text">Na telefono dhe do të marrësh një përgjigje të shpejtë me këshillim
+                        dhe ofertë të përshtatur për hapësirën tënde.</p>
+
+                    <div class="contact__actions">
+                        <a class="btn btn--primary btn--block" href="tel:+3834451628">Kontakto për ofertën</a>
+                    </div>
+
+                    <div class="contact__tips" aria-label="Detaje të dobishme">
+                        <p class="contact__tips-title">Për një ofertë më të saktë, dërgo:</p>
+                        <ul class="contact__checklist">
+                            <li>Kategorinë (Kuzhina / Garderoba / Dhoma gjumi / Komoda)</li>
+                            <li>Përmasat e hapësirës</li>
+                            <li>Stilin dhe ngjyrën që preferon</li>
+                            <li>Buxhetin e përafërt dhe afatin</li>
+                        </ul>
+                    </div>
+
+                    <p class="contact__hint">Preferon të flasim direkt? <a href="tel:+3834451628">Na telefono</a> ose
+                        dërgo sms ne WhatsApp / Viber në +383 44 572 912 / +383 44 516 282.</p>
+                </div>
+
+                <div class="contact__info" aria-label="Detaje kontakti dhe hartë">
+                    <div class="info-card">
+                        <h3 class="info-card__title">Na gjen këtu</h3>
+                        <p class="info-card__text">Adresë: Lloshkobare-Ferizaj</p>
+                        <p class="info-card__text">Orari: Hën–Sht, 08:00–18:00</p>
+                        <div class="info-card__links">
+                            <a class="pill" href="tel:+38344516282">📞 +383 44 516 282</a>
+                            <a class="pill" href="tel:+38344572912">📞 +383 44 572 912</a>
+
+                        </div>
+                    </div>
+
+                    <!-- Google Maps embed -->
+                    <div class="media media--map" role="region" aria-label="Vendndodhja jonë në hartë">
+                        <iframe class="media__iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2666.4846889916043!2d21.124062000000002!3d42.394487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDIzJzQwLjIiTiAyMcKwMDcnMjYuNiJF!5e1!3m2!1sen!2s!4v1769087451941!5m2!1sen!2s"
+                            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="GimiHome Location"></iframe>
+                        <!-- Map caption / label -->
+                        <div class="media__map-info">
+                            <h4 class="media__map-title">Vendndodhja jonë në hartë</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================
+			 Footer
+	====================== -->
+    <footer class="footer" aria-label="Footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <div class="brand brand--footer" aria-label="GimiHome">
+                    <span class="brand__mark">GH</span>
+                    <span class="brand__text">
+                        <span class="brand__name">GimiHome</span>
+                        <span class="brand__tagline">Ngrohtësi • Stil • Funksionalitet</span>
+                    </span>
+                </div>
+                <p class="footer__text">Krijojmë mobilie që sjellin ngrohtësi dhe stil në shtëpinë tuaj. Faleminderit që
+                    na zgjidhni për hapësirën tuaj.</p>
+            </div>
+
+            <div class="footer__links" aria-label="Rrjete sociale">
+                <a class="footer__link" href="https://www.facebook.com/profile.php?id=61571942250297" target="_blank"
+                    aria-label="Facebook">Facebook</a>
+                <a class="footer__link" href="#" aria-label="Instagram">Instagram</a>
+                <a class="footer__link" href="#" aria-label="TikTok">TikTok</a>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <p>© <span id="year">2026</span> GimiHome. Të gjitha të drejtat e rezervuara.</p>
+            <p style="color: white; font-family: sans-serif;">
+                Website developer:
+                <a href="mailto:abedinialbi@email.com" style="color: #ff9d42; text-decoration: none; font-weight: bold;"
+                    onmouseover="this.style.textDecoration='underline'; this.style.color='#ffffff';"
+                    onmouseout="this.style.textDecoration='none'; this.style.color='#ff9d42';">
+                    Albi Abedini.
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Optional tiny script just for the year -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+        /* Lightbox script: grouped behavior for all product and gallery images */
+        (function () {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const caption = document.getElementById('lightboxCaption');
+            const btnPrev = document.getElementById('lightboxPrev');
+            const btnNext = document.getElementById('lightboxNext');
+            const btnClose = document.getElementById('lightboxClose');
+            let currentGroup = [];
+            let currentIndex = -1;
+
+            if (!lightbox) return;
+
+            const allImages = Array.from(document.querySelectorAll('img.media__img'));
+
+            function openGroupAt(groupName, indexInGroup) {
+                currentGroup = Array.from(document.querySelectorAll(`img.media__img[data-group="${groupName}"]`));
+                if (!currentGroup.length) {
+                    // fallback to single image
+                    currentGroup = [allImages[indexInGroup]];
+                    currentIndex = 0;
+                } else {
+                    currentIndex = indexInGroup;
+                }
+                openAt(currentIndex);
+            }
+
+            function openAt(index) {
+                if (!currentGroup.length) return;
+                currentIndex = (index + currentGroup.length) % currentGroup.length;
+                const img = currentGroup[currentIndex];
+                lightboxImg.src = img.dataset.large || img.src;
+                lightboxImg.alt = img.alt || '';
+                caption.textContent = img.alt || '';
+                lightbox.classList.add('lightbox--open');
+                lightbox.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+                btnClose.focus();
+            }
+
+            function close() {
+                lightbox.classList.remove('lightbox--open');
+                lightbox.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+                currentGroup = [];
+                currentIndex = -1;
+            }
+
+            function showNext() { openAt(currentIndex + 1); }
+            function showPrev() { openAt(currentIndex - 1); }
+
+            // Attach handlers to every image and use its data-group
+            allImages.forEach((img, i) => {
+                img.style.cursor = 'zoom-in';
+                img.addEventListener('click', (e) => {
+                    const group = img.dataset.group || `__single_${i}`;
+                    // if image has no explicit group, create a single-image group
+                    if (!img.dataset.group) img.setAttribute('data-group', group);
+                    const groupItems = Array.from(document.querySelectorAll(`img.media__img[data-group="${group}"]`));
+                    const idx = groupItems.indexOf(img);
+                    openGroupAt(group, idx);
+                });
+            });
+
+            btnNext.addEventListener('click', showNext);
+            btnPrev.addEventListener('click', showPrev);
+            btnClose.addEventListener('click', close);
+
+            // close when clicking the backdrop (outside image)
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) close();
+            });
+
+            // keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (lightbox.classList.contains('lightbox--open')) {
+                    if (e.key === 'Escape') close();
+                    if (e.key === 'ArrowRight') showNext();
+                    if (e.key === 'ArrowLeft') showPrev();
+                }
+            });
+        })();
+    </script>
+    <script>
+        // Mobile menu toggler
+        (function () {
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const backdrop = document.getElementById('mobileMenuBackdrop');
+            const closeBtn = document.getElementById('mobileMenuClose');
+            const links = mobileMenu ? mobileMenu.querySelectorAll('.nav__link') : [];
+
+            if (!hamburger || !mobileMenu) return;
+
+            function open() {
+                mobileMenu.classList.add('mobile-nav--open');
+                mobileMenu.setAttribute('aria-hidden', 'false');
+                hamburger.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+                // focus first link for accessibility
+                if (links[0]) links[0].focus();
+            }
+
+            function close() {
+                mobileMenu.classList.remove('mobile-nav--open');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+                hamburger.focus();
+            }
+
+            hamburger.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.contains('mobile-nav--open');
+                isOpen ? close() : open();
+            });
+
+            closeBtn && closeBtn.addEventListener('click', close);
+            backdrop && backdrop.addEventListener('click', close);
+
+            // Close when a link is tapped (good mobile UX)
+            links.forEach(l => l.addEventListener('click', () => { close(); }));
+
+            // Keyboard handling
+            document.addEventListener('keydown', (e) => {
+                if (!mobileMenu.classList.contains('mobile-nav--open')) return;
+                if (e.key === 'Escape') close();
+            });
+        })();
+    </script>
+</body>
+
+</html>

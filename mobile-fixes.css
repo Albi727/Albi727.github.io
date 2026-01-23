@@ -1,0 +1,131 @@
+/* Global mobile fixes and small-screen overrides */
+:root {
+    --mf-container-padding: 16px
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+img,
+video,
+iframe,
+picture {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+
+body {
+    word-wrap: break-word;
+}
+
+.container {
+    padding-left: var(--mf-container-padding);
+    padding-right: var(--mf-container-padding)
+}
+
+/* Ensure touch targets readable and not too small */
+button,
+input,
+select,
+textarea,
+a {
+    font-size: 16px
+}
+
+/* Nav toggles: when .open present show stacked links */
+.nav-links {
+    transition: all .18s ease
+}
+
+.nav-links.open,
+.nav.open ul,
+.nav.open .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.hamburger,
+.mobile-menu,
+.nav-toggle {
+    cursor: pointer
+}
+
+/* Small-screen typography and spacing */
+@media (max-width: 600px) {
+    h1 {
+        font-size: clamp(20px, 6vw, 28px)
+    }
+
+    h2 {
+        font-size: clamp(18px, 5.5vw, 22px)
+    }
+
+    .hero {
+        padding: 28px 0
+    }
+
+    .hero__media {
+        display: none !important
+    }
+
+    .hero__content,
+    .hero-content {
+        padding: 0 4px
+    }
+
+    .section {
+        padding: 32px 0
+    }
+
+    .btn,
+    button {
+        padding: 10px 12px
+    }
+
+    .grid--products,
+    .bento-grid,
+    .grid,
+    .services-grid {
+        grid-template-columns: 1fr !important
+    }
+
+    .trust {
+        grid-template-columns: 1fr
+    }
+
+    .container {
+        width: 100%;
+        box-sizing: border-box
+    }
+
+    .product-card .product-card__title {
+        font-size: 15px
+    }
+
+    .product-card__text,
+    p {
+        font-size: 14px
+    }
+
+    .media--map iframe {
+        height: 220px
+    }
+}
+
+/* Defensive: avoid large fixed widths from older files */
+*[style*="width: 400px"],
+*[style*="width:400px"] {
+    max-width: 100%
+}
+
+/* make tables scrollable on small screens */
+@media (max-width:720px) {
+    table {
+        display: block;
+        overflow: auto;
+        width: 100%
+    }
+}
